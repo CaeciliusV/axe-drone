@@ -9,7 +9,7 @@ const int DESCEND_PIN  = 5;    // green
 const int TRICK_PIN    = 6;    // blue (pause)
 const int BUZZER_PIN   = 7;
 const int ARM_PIN      = 10;   // ARM switch (LOW = ON)
-const int FAKE_GND_PIN = 11;   // TEST ONLY: jumper 10 -> 11 acts as the switch. Delete when real switch is wired.
+const int FAKE_GND_PIN = 11;   // ARM rocker's 2nd wire goes here (pin set LOW = acts as GND). Move to GND rail on perfboard and delete this + lines in setup().
 const int CRSF_TX_PIN  = 17;
 const int CRSF_RX_PIN  = 18;
 const uint8_t IMU_ADDR = 0x6A;
