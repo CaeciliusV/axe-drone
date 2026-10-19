@@ -1,0 +1,52 @@
+# version
+# Betaflight / AT32F435M (A435) 4.5.1 Aug  1 2024 / 19:54:46 (77d01ba3b) MSP API: 1.46
+# config rev: ad0057e
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name TBS_LUCID_FC
+manufacturer_id TEBS
+mcu_id 109c98b21e2740000dc11722
+signature 
+
+# feature
+feature TELEMETRY
+feature LED_STRIP
+feature OSD
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 0 900 2100 0 0
+
+# master
+set bat_capacity = 2000
+set vbat_scale = 216
+
+profile 0
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
